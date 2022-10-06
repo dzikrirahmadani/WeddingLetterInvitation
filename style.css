@@ -1,0 +1,398 @@
+/* CSS */ wedding
+
+/* animation css */
+
+* {
+    scroll-behavior: smooth;
+}
+
+div#letter {
+    animation : landing 1.5s forwards;
+}
+
+@keyframes landing {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
+img.wedding {
+    filter: contrast(80%);
+    filter: brightness(80%);
+  }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+}
+
+.bi {
+    fill: #475569;
+}
+.bi.putih {
+    fill: #F87171;
+}
+
+.nav-title {
+    fill: #475569;
+}
+.nav-title.putih {
+    fill: #F87171;
+}
+
+.flower {
+    transform: scale(0);
+    transition: .5s;
+    opacity: 0;
+}
+.flower.muncul {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.flower2 {
+    transform: scale(0);
+    transition: .5s;
+    opacity: 0;
+}
+.flower2.muncul {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.flower3 {
+    transform: scale(0);
+    transition: .5s;
+    opacity: 0;
+}
+.flower3.muncul {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.flower4 {
+    transform: scale(0);
+    transition: .5s;
+    opacity: 0;
+}
+.flower4.muncul {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.flower5 {
+    transform: scale(0);
+    transition: .5s;
+    opacity: 0;
+}
+.flower5.muncul {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.title {
+    transform: scale(1,0);
+    transition: .5s;
+}
+.title.muncul {
+    transform: scale(1);
+}
+
+.title2 {
+    transform: scale(1,0);
+    transition: .5s;
+}
+.title2.muncul {
+    transform: scale(1);
+}
+
+.title3 {
+    transform: scale(1,0);
+    transition: .5s;
+}
+.title3.muncul {
+    transform: scale(1);
+}
+
+.title4 {
+    transform: scale(1,0);
+    transition: .5s;
+}
+.title4.muncul {
+    transform: scale(1);
+}
+
+.title5 {
+    transform: scale(1,0);
+    transition: .5s;
+}
+.title5.muncul {
+    transform: scale(1);
+}
+
+.opening {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: .5s;
+}
+.opening.muncul {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.profiles {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+}
+.profiles.muncul {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dan {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 3s;
+}
+.dan.muncul {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Transparent Gradient */
+.event::after {
+    top: 240vh;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #FEF2F2 10%, transparent 100%);
+    z-index: 1;
+}
+
+.photo::after {
+    top: 525vh;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #FEF2F2 10%, transparent 100%);
+    z-index: 1;
+}
+
+
+.card1 {
+    /* box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.46); */
+    transform: translateY(100px);
+    opacity: 0;
+    transition: .5s;
+}
+.card1.muncul {
+    opacity: 85%;
+    transform: translateY(0);
+}
+
+.card2 {
+    /* box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.46); */
+    transform: translateY(100px);
+    opacity: 0;
+    transition: .9s;
+}
+.card2.muncul {
+    opacity: 85%;
+    transform: translateY(0);
+}
+
+.gallery img {
+    transition: 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    /* transform: scale(1.04); */
+    /* filter: brightness(130%); */
+    filter: contrast(150%);
+}
+
+#img1 {
+    transform: scale(0);
+    transition: .7s;
+    opacity: 0;
+}
+#img1.muncul {
+    transform: scale(1);
+    opacity: 3;
+}
+
+#img2 {
+    transform: scale(0);
+    transition: 1s;
+    opacity: 0;
+}
+#img2.muncul {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#img3 {
+    transform: scale(0);
+    transition: 1.3s;
+    opacity: 0;
+}
+#img3.muncul {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#img4 {
+    transform: scale(0);
+    transition: .7s;
+    opacity: 0;
+}
+#img4.muncul {
+    transform: scale(1);
+    opacity: 3;
+}
+
+#img5 {
+    transform: scale(0);
+    transition: 1s;
+    opacity: 0;
+}
+#img5.muncul {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#img6 {
+    transform: scale(0);
+    transition: 1.3s;
+    opacity: 0;
+}
+#img6.muncul {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.circle1 {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: .5s;
+}
+.circle1.muncul {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.circle2 {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 1s;
+}
+.circle2.muncul {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.circle3 {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 2s;
+}
+.circle3.muncul {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.circle4 {
+    transform: translateX(-190px);
+    opacity: 0;
+    transition: 2.4s;
+}
+.circle4.muncul {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.btn-map {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: .5s;
+}
+.btn-map.muncul {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* End Animation CSS */
+
+/* AUDIO */
+.audio-player {
+    --player-button-width: 3em;
+    --sound-button-width: 2em;
+    --space: .5em;
+    width: 15rem;
+    height: 3rem;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  .player-button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    margin-right: 5px;
+  }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 340px) {
+
+    li a svg {
+        width: 17px;
+        height: 17px;
+    }
+    .bi-house-heart-fill {
+        width: 20px;
+        height: 20px;
+    }
+
+    li a span {
+        margin-left: -1005px;
+        visibility: hidden;
+        position:absolute;
+    }
+  }
+
+@media screen and (max-width: 640px) {
+
+    li {
+        margin-left: 25px;
+    }
+
+    li a span {
+        margin-left: -1005px;
+        visibility: hidden;
+        position:absolute;
+    }
+  }

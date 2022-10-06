@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inscale=1.0">
+    <title>Web Undangan Online</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- animation css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-red-50" style="font-family: 'Open Sans', sans-serif;">
+    
+    <!-- NAVABAR -->
+    <div class="nav fixed bottom-0 w-[100%] px-[6px] py-[13px] bg-white flex justify-center z-20 shadow-2xl">
+        <ul class="flex">
+            <li class="px-4 m-auto">
+                <a href="#" class="grid" id="home">
+                    <!-- <i class="bi bi-house-heart-fill ml-[18px] text-slate-600"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#475569" class="bi bi-house-heart-fill m-auto" viewBox="0 0 16 16">
+                        <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"/>
+                        <path d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"/>
+                    </svg>
+                    <span class="nav-title font-bold text-slate-600">Home</span>
+                </a>
+            </li>
+            <li class="px-4 m-auto">
+                <a href="#couple" class="grid">
+                    <!-- <i class="bi bi-heart-fill ml-[18px] text-slate-600"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#475569" class="bi bi-heart-fill m-auto mt-1.5" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <span class="nav-title font-bold text-slate-600">Couple</span>
+                </a>
+            </li>
+            <li class="px-4 m-auto">
+                <a href="#event" class="grid">
+                    <!-- <i class="bi bi-calendar2-check-fill ml-[18px] text-slate-600"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#475569" class="bi bi-calendar2-check-fill m-auto mt-1.5" viewBox="0 0 16 16">
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zm-2.6 5.854a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                    </svg>
+                    <span class="nav-title font-bold text-slate-600">Event</span>
+                </a>
+            </li>
+            <li class="px-4 m-auto">
+                <a href="#gallery" class="grid">
+                    <!-- <i class="bi bi-image-fill ml-[18px] text-slate-600"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#475569" class="bi bi-image-fill m-auto mt-1.5" viewBox="0 0 16 16">
+                        <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+                      </svg>
+                    <span class="nav-title font-bold text-slate-600">Gallery</span>
+                </a>
+            </li>
+            <li class="px-4 m-auto">
+                <a href="#guestbook" class="grid">
+                    <!-- <i class="bi bi-chat-left-dots-fill ml-[18px] text-slate-600"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#475569" class="bi bi-chat-left-dots-fill m-auto mt-1.5" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                    <span class="nav-title font-bold text-slate-600">GuestBook</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- HOME -->
+    <section id="home" style="background:url(img/wedding.jpg) center center no-repeat; background-size: cover;" class="hero h-screen">
+        <div id="hero" class="absolute mt-[50px] ml-[30%]">
+            <div class="grid" id="letter">
+                <img src="img/flower.png" alt="" class="m-auto">
+                <h4 class="text-white text-center font-semibold text-[25px]">The Wedding Of</h4>
+                <h1 class="text-white text-center font-regular text-[100px]" style="font-family: 'Passions Conflict', cursive;">Anonym & Mynonym</h1>
+                <hr class="m-auto border-[2px] border-[#fff] w-[6%] inline-block">
+                <p class="text-center text-white font-semibold mt-[100px]">09 November 2023</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUPLE -->
+    <section id="couple" class="couple z-10">
+        <div id="couple" class="h-[820px]">
+            <img src="img/flower2.png" alt="" class="flower mt-[100px] ml-[37.5%]">
+
+            <h1 class="title text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Bridge & Groom</h1>
+
+            <br>
+
+            <div class="opening">
+                <p class="salam italic text-gray-800 text-center">Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+
+                <br>
+
+                <p class="mt-[10px] text-gray-800 text-center">Maha suci Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan.</p>
+                <p class="mt-[10px] text-gray-800 text-center">Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:</p>
+            </div>
+            
+            <div class="profiles flex ml-[27%] mt-[70px]">
+                <div class="profile1">
+                    <img src="img/female.png" alt="" class="w-[170px] rounded-full border-[4px] border-red-200">
+                    <h2 class="mt-[20px] mb-[20px] text-gray-600 text-[70px] text-center" style="font-family: 'Passions Conflict', cursive;">Mynonym</h2>
+                    <b class="ml-[13%] text-lg text-gray-800">Mynonym Putri</b>
+                    <p class="text-center text-sm text-gray-800">Putri Dari Pasangan
+                        <br>
+                        <b>Ibu & Bapa</b>
+                    </p>
+                    <br>
+                    <p class="text-center text-sm text-gray-800">Tasikmalaya</p>
+                </div>
+                <div class="profile2 ml-[25%] ">
+                    <img src="img/male.png" alt="" class="w-[170px] rounded-full border-[4px] border-red-200">
+                    <h2 class="mt-[20px] mb-[20px] text-gray-600 text-[70px] text-center" style="font-family: 'Passions Conflict', cursive;">Anonym</h2>
+                    <b class="ml-[14%] text-lg text-gray-800">Anonym Putra</b>
+                    <p class="text-center text-sm text-gray-800">Putra Dari Pasangan
+                        <br>
+                        <b>Ibu & Bapa</b>
+                    </p>
+                    <br>
+                    <p class="text-center text-sm text-gray-800">Tasikmalaya</p>
+                </div>
+            </div>
+            <span class="dan absolute font-bold text-[70px] ml-[46.5%] mt-[-360px]">&</span>
+        </div>
+    </section>
+
+    <!-- EVENT -->
+    <section id="event">
+        <div class="event">
+            <img src="img/wedding.jpg" alt="" class="bg-wedding brightness-90">
+            <img src="img/flower2.png" alt="" class="flower2 z-10 mt-[-760px] ml-[35%] absolute">
+            <h1 class="title2 absolute z-10 title text-[50px] text-center mt-[-700px] ml-[38%]" style="font-family: 'Passions Conflict', cursive;">Wedding Schedule</h1>
+        </div>
+        <div class="flex absolute mt-[-550px] ml-[17.5%] z-10">
+            <div class="card1 bg-red-50 w-[400px] h-[300px] rounded-lg shadow-lg">
+                <h2 class="text-[50px] text-center mt-5" style="font-family: 'Passions Conflict', cursive;">Akad Nikah</h2>
+                <hr class="border-[2px] border-slate-900 ml-[48%] w-[10%]">
+                <div class="schedule flex">
+                    <p class="text-slate-800 mt-8 ml-[19px] text-center">November<br>2022</p>
+                    <hr class="mt-8 ml-[20px] h-[50px] border-[1px] border-slate-800">
+                    <h4 class="ml-[13%] mt-4"><b class="ml-[20px] text-[35px]">09</b> <br><p class="text-slate-800 ">Wednesday</p></h4>
+                    <hr class="mt-8 ml-[50px] h-[50px] border-[1px] border-slate-800">
+                    <p class="text-slate-800 mt-8 ml-[20px] text-center">Gedung<br>Renald</p>
+                </div>
+                <p class="text-slate-800 text-center italic mt-5">08:00 - Selesai <br>Jl Gunung Koneng Tasikmalaya</p>
+            </div>
+            <div class="card2 ml-[30px] bg-red-50 w-[400px] h-[300px] rounded-lg shadow-lg">
+                <h2 class="text-[50px] text-center mt-5" style="font-family: 'Passions Conflict', cursive;">Resepsi</h2>
+                <hr class="border-[2px] border-slate-900 ml-[48%] w-[10%]">
+                <div class="schedule flex">
+                    <p class="text-slate-800 mt-8 ml-[19px] text-center">November<br>2022</p>
+                    <hr class="mt-8 ml-[20px] h-[50px] border-[1px] border-slate-800">
+                    <h4 class="ml-[13%] mt-4"><b class="ml-[20px] text-[35px]">09</b> <br><p class="text-slate-800 ">Wednesday</p></h4>
+                    <hr class="mt-8 ml-[50px] h-[50px] border-[1px] border-slate-800">
+                    <p class="text-slate-800 mt-8 m-auto text-center">Gedung<br>Renald</p>
+                </div>
+                <p class="text-slate-800 text-center italic mt-5">10:00 - 13:00 <br>Jl Gunung Koneng Tasikmalaya</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- GALLERY -->
+    <section id="gallery">
+        <div class="photo h-[890px]">
+            <img src="img/flower2.png" alt="" class="flower3 mt-[100px] m-auto">
+            <h1 class="title3 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Our Gallery</h1>
+
+            
+            <div class="z-10 full-img w-[100%] h-[100vh] fixed top-0 left-0 items-center justify-center" style="background-color: rgba(255, 255, 255, 0.6); display: none;" id="fullImgBox">
+                <img src="img/img1.jpg" alt="" class="w-[90%] max-w-[500px]" id="fullImg">
+                <span class="absolute top-[5%] ml-[90%] text-[30px] cursor-pointer" onclick="closeFullImg()">X</span>
+            </div>
+
+            <div class="gallery w-[80%] mt-[100px] m-auto mb-[50px] mt-5">
+                <img src="img/img1.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img1">
+                <img src="img/img2.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img2">
+                <img src="img/img3.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img3">
+                <img src="img/img4.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img4">
+                <img src="img/img5.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img5">
+                <img src="img/img6.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img6">
+            </div>
+        </div>
+        <div class="h-[600px]" style="background-image: url(img/wedding.jpg); background-attachment: fixed; background-size: cover; background-position: 0 -100px;">
+            <div class="z-10 absolute ml-[9%] card3 mt-[200px] bg-slate-100 w-[1100px] h-[200px] rounded-xl" style="background-color: rgba(225, 225, 225, 0.5);">
+                <p class="text-center text-gray-900 text-[15px] p-6">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."</p>
+                <h2 class="font-semibold text-center text-[30px]">QS. Ar-Rum : 21</h2>
+            </div>
+        </div>
+        <div class="count-down h-[600px]">
+            <img src="img/flower2.png" alt="" class="flower4 mt-[100px] m-auto">
+            <h1 class="title4 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Countdown</h1>
+
+            <div class="circles flex ml-[20%] mt-[30px]">
+                <div class="circle1 bg-[#faebd7] w-[108px] h-[108px] rounded-full border-[1px] border-orange-200">
+                    <h1 class="text-center text-[30px] mt-7">36</h1>
+                    <p class="bg-stone-400 text-center rounded-[5px] text-white">Days</p>
+                </div>
+                <div class="circle2 ml-[120px] bg-[#faebd7] w-[108px] h-[108px] rounded-full border-[1px] border-orange-200">
+                    <h1 class="text-center text-[30px] mt-7">17</h1>
+                    <p class="bg-stone-400 text-center rounded-[5px] text-white">Hours</p>
+                </div>
+                <div class="circle3 ml-[120px] bg-[#faebd7] w-[108px] h-[108px] rounded-full border-[1px] border-orange-200">
+                    <h1 class="text-center text-[30px] mt-7">60</h1>
+                    <p class="bg-stone-400 text-center rounded-[5px] text-white">Minutes</p>
+                </div>
+                <div class="circle4 ml-[120px] bg-[#faebd7] w-[108px] h-[108px] rounded-full border-[1px] border-orange-200">
+                    <h1 class="text-center text-[30px] mt-7">51</h1>
+                    <p class="bg-stone-400 text-center rounded-[5px] text-white">Seconds</p>
+                </div>
+            </div>
+
+            <div class="map w-[100%]">
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.228689743799!2d108.2057787142483!3d-7.3281921741032106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5739f7dafe1d%3A0x2bc2de0433133e93!2sGedung%20Renald!5e0!3m2!1sid!2sid!4v1664945475057!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-[120px] h-[300px] w-[100%]"></iframe>
+                </div>
+                <div  class="btn-map text-white m-auto w-[14%] h-[35px] mt-[40px] flex items-center justify-center rounded-lg bg-[#ff7070] hover:bg-slate-600">
+                    <a href="https://www.google.co.id/maps/place/Gedung+Renald/@-7.3281922,108.2057787,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6f5739f7dafe1d:0x2bc2de0433133e93!8m2!3d-7.3281975!4d108.2079674" target="_blank">Open Google Maps</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GUESTBOOK -->
+    <section id="guestbook" class="mt-[220px] h-screen">
+        <img src="img/flower2.png" alt="" class="flower5 mt-[100px] m-auto">
+        <h1 class="title5 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">GuestBooks</h1>
+
+        <div class="book m-auto bg-white w-[47%] h-[58%] rounded-l-xl border-[1.5px] border-red-400 overflow-auto">
+            <div class="flex ml-[30px] mt-[40px]">
+                <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">SM</div>
+                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Shinta Maharani <br><p class="text-[11px]">02 December 2022 16:00</p></h4>
+            </div>
+            <p class="ml-[95px]">Mibujuh Na 🌹</p>
+            <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
+
+            <div class="flex ml-[30px] mt-4">
+                <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">UB</div>
+                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Ujang Bungsu <br><p class="text-[11px]">01 December 2022 13:00</p></h4>
+            </div>
+            <p class="ml-[95px]">Selamat menua bersama 💐</p>
+            <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
+
+            <div class="flex ml-[30px] mt-4">
+                <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">KC</div>
+                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Keluarga Cemara <br><p class="text-[11px]">05 November 2022 11:00</p></h4>
+            </div>
+            <p class="ml-[95px]">Barakallah semoga lancar sampai hari H dan menjadi kelyarga yg SaMaWa.. 🤲</p>
+            <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
+
+            <div class="flex ml-[30px] mt-4">
+                <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">IS</div>
+                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Ilham Samsudin <br><p class="text-[11px]">09 November 2022 16:00</p></h4>
+            </div>
+            <p class="ml-[95px]">Happy wedding 🎉</p>
+            <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
+
+            <div class="flex ml-[30px] mt-4">
+                <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">SH</div>
+                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Saudara Hansen <br><p class="text-[11px]">10 November 2022 09:00</p></h4>
+            </div>
+            <p class="ml-[95px]">Selamat atas pernikahannya..</p>
+            <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
+
+            <div class="flex ml-[30px] mt-4">
+                <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">IR</div>
+                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Idgitaf Ramadhan <br><p class="text-[11px]">10 November 2022 11:00</p></h4>
+            </div>
+            <p class="ml-[95px]">asdads</p>
+            <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
+
+            <div class="flex ml-[30px] mt-4">
+                <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">IR</div>
+                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Idgitaf Ramadhan <br><p class="text-[11px]">10 November 2022 11:01</p></h4>
+            </div>
+            <p class="ml-[95px]">Selamat ya 👏</p>
+            <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
+
+            <div class="flex ml-[30px] mt-4">
+                <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">KK</div>
+                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Keluarga Kridzi & Co <br><p class="text-[11px]">09 November 2022 11:01</p></h4>
+            </div>
+            <p class="ml-[95px]">Selamat ya atas pernikahannya, sakinah mawaddah warohmah. 🎉🎂🙏</p>
+            <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
+
+            <div class="flex ml-[30px] mt-4">
+                <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">RSJ</div>
+                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Rehan Syulit Jir (RSJ)<br><p class="text-[11px]">05 October 2022 17:00</p></h4>
+            </div>
+            <p class="ml-[95px]">Begitu Syulit lupakan rehan, apalagi rehan baik....</p>
+            <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
+
+            <div class="flex ml-[30px] mt-4">
+                <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">HM</div>
+                <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Hikmal Maulana <br><p class="text-[11px]">05 October 2022 16:00</p></h4>
+            </div>
+            <p class="ml-[95px]">Titip Salam Buat Bang Galih, jangan lupa titik koma💻</p>
+            <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
+        </div>
+    </section>
+
+    <footer class="bg-[#faebd7] w-full h-[200px]">
+        <div class="footer pl-[42%] pt-[50px]">
+            <a href="https://www.youtube.com/channel/UCwhzKJGC3jD47D2wHV5SreQ" class="flex" target="_blank">
+                <img src="img/logo-kridzi.jpg" alt="" class="rounded-full w-[20px] h-[20px]">
+                <p class="ml-2 font-semibold text-[15px] text-gray-900">Dzikrinativedesigns</p>
+            </a>
+            <p class="ml-[-22px] mt-2 text-xs text-gray-700">Ⓒ Website Undangan Pernikahan Online</p>
+        </div>
+    </footer>
+
+    <div class="audio-player fixed bottom-[90px] right-[-150px] z-20">
+        <audio autoplay loop src="mp3/Sabilulungan.mp3"></audio>
+        <div class="controls m-auto">
+        <button class="player-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+            </svg>
+        </button>
+        </button>
+        </div>
+    </div>
+  
+    <script src="query-3.6.1.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
