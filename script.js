@@ -23,6 +23,8 @@ $(window).scroll(function(){
 
     if( wScroll > $('.profiles').offset().top - 560 ) {
         $('.profiles').addClass('muncul'); 
+        $('.profile-1').addClass('muncul');
+        $('.profile-2').addClass('muncul');
     } else {
         $('.profiles').removeClass('muncul');
     }
@@ -33,13 +35,19 @@ $(window).scroll(function(){
         $('.dan').removeClass('muncul');
     }
 
+    if( wScroll > $('.dan2').offset().top - 500 ) {
+        $('.dan2').addClass('muncul'); 
+    } else {
+        $('.dan2').removeClass('muncul');
+    }
+
     if( wScroll > $('.flower2').offset().top - 550 ) {
         $('.flower2').addClass('muncul');
     } else {
         $('.flower2').removeClass('muncul');
     }
 
-    if( wScroll > $('.title2').offset().top - 500 ) {
+    if( wScroll > $('.title2').offset().top - 540 ) {
         $('.title2').addClass('muncul'); 
     } else {
         $('.title2').removeClass('muncul');
@@ -94,7 +102,7 @@ $(window).scroll(function(){
     }
 
     if( wScroll > $('#img1').offset().top - 600 ) {
-        $('#img1').addClass('muncul'); 
+        $('#img1').addClass('muncul');
     } else {
         $('#img1').removeClass('muncul');
     }

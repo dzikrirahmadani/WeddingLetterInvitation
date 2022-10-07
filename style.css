@@ -1,4 +1,4 @@
-/* CSS */ wedding
+/* CSS */
 
 /* animation css */
 
@@ -28,7 +28,7 @@ img.wedding {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr,));
     grid-gap: 15px;
 }
 
@@ -156,18 +156,48 @@ img.wedding {
     transform: translateY(0);
 }
 
+.profile-1 {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+}
+.profile-1.muncul {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.profile-2 {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+}
+.profile-2.muncul {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .dan {
     transform: translateY(100px);
     opacity: 0;
-    transition: 3s;
+    transition: 2s;
 }
 .dan.muncul {
     opacity: 1;
     transform: translateY(0);
 }
 
+.dan2 {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 2s;
+}
+.dan2.muncul {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Transparent Gradient */
-.event::after {
+/* .event::after {
     top: 240vh;
     content: '';
     position: absolute;
@@ -187,7 +217,7 @@ img.wedding {
     height: 100vh;
     background: linear-gradient(to bottom, #FEF2F2 10%, transparent 100%);
     z-index: 1;
-}
+} */
 
 
 .card1 {
@@ -384,7 +414,11 @@ img.wedding {
     }
   }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
+
+    h2.title-hero {
+        margin-top: -150px;
+    }
 
     li {
         margin-left: 25px;
@@ -396,3 +430,55 @@ img.wedding {
         position:absolute;
     }
   }
+
+@media screen and (max-width: 529px) {
+    h2.title-hero {
+        margin-top: -300px;
+    }
+}
+
+.acara {
+    display: flex;
+}
+
+@media screen and (max-width: 855px) {
+    .acara {
+        display: grid;
+    }
+    .card2 {
+        margin-top: 20px;
+    }
+}
+
+.card1 {
+    width: 400px;
+}
+.card2 {
+    width: 400px;
+}
+
+@media screen and (max-width: 418px) {
+    .card1 {
+        width: 300px;
+    }
+    .card2 {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .card1 {
+        width: 255px;
+    }
+    .card2 {
+        width: 255px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 15px;
+    }
+}
