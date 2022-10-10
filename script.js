@@ -1,8 +1,6 @@
 $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
 
-    console.log(wScroll);
-
     if( wScroll > $('.flower').offset().top - 500 ) {
         $('.flower').addClass('muncul');
     } else {
@@ -23,10 +21,20 @@ $(window).scroll(function(){
 
     if( wScroll > $('.profiles').offset().top - 560 ) {
         $('.profiles').addClass('muncul'); 
-        $('.profile-1').addClass('muncul');
-        $('.profile-2').addClass('muncul');
     } else {
         $('.profiles').removeClass('muncul');
+    }
+
+    if( wScroll > $('.profile-1').offset().top - 500 ) {
+        $('.profile-1').addClass('muncul');
+    } else {
+        $('.profile-1').removeClass('muncul');
+    }
+
+    if( wScroll > $('.profile-2').offset().top - 500 ) {
+        $('.profile-2').addClass('muncul');
+    } else {
+        $('.profile-2').removeClass('muncul');
     }
 
     if( wScroll > $('.dan').offset().top - 550 ) {
@@ -168,6 +176,20 @@ $(window).scroll(function(){
     }
 
 });
+
+
+document.getElementById('open').addEventListener('click', () => {
+    const cover = document.querySelector('#cover');
+    cover.style.marginTop = "-100rem";
+    cover.style.opacity = "0";
+    cover.style.transition = "all 1s .1s ease-in-out"
+    setTimeout(() => {
+        cover.classList.add('hidden');
+    }, 2000)
+})
+
+
+// END JS ANIMATION
 
 // LIGHBOX JS
 var fullImgBox = document.getElementById("fullImgBox");

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, inscale=1.0">
     <title>Web Undangan Online</title>
 
+    <link rel="icon" type="image/x-icon" href="img/logo-icon/logo-kridzi.jpg">
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +29,21 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body class="bg-red-50" style="font-family: 'Open Sans', sans-serif;">
+<body class="bg-red-50 overflow-x-hidden" style="font-family: 'Open Sans', sans-serif;">
+
+    <div id="cover" style="background:url(img/bg/wedding1.jpg) center center no-repeat; background-size: cover;" class="kosong z-30 fixed top-0 bottom-0 left-0 right-0 w-full h-screen py-28 px-2">
+        <div class="hero mt-[-30px]">
+            <img src="img/element/flower.png" alt="" class="m-auto w-[100px] sm:w-[150px]">
+            <h4 class="text-white text-center font-semibold text-[16px] sm:text-[25px]">Hello You're Invited</h4>
+            <h1 class="text-white align-center text-center font-regular text-[60px] sm:text-[80px] md:text-[100px]" style="font-family: 'Passions Conflict', cursive;">Anonym & Mynonym</span></h1>
+            <hr class="m-auto border-[2px] border-[#fff] w-[16%]">
+            <p class="text-center text-white font-semibold pt-10">09 November 2023</p>
+            <button class="btn-open block m-auto py-2 w-[250px] mt-4 text-center text-white bg-red-400 rounded-lg cursor-pointer" id="open"> Open Invitation </button>
+        </div>
+    </div>
     
     <!-- NAVABAR -->
-    <div class="nav fixed bottom-0 w-[100%] px-[6px] py-[13px] bg-white flex justify-center z-20 shadow-2xl">
+    <div class="nav fixed bottom-0 w-full px-[6px] py-[13px] bg-white flex justify-center z-20 shadow-2xl">
         <ul class="flex">
             <li class="px-4 m-auto">
                 <a href="#" class="grid" id="home">
@@ -82,21 +95,20 @@
     </div>
     
     <!-- HOME -->
-    <section id="home" style="background:url(img/wedding1.jpg) center center no-repeat; background-size: cover; filter: contrast(95%);" class="hero w-full h-screen">
-        <div class="grid" id="letter">
-            <img src="img/flower.png" alt="" class="m-auto mt-[60px] w-[100px] sm:w-[150px]">
+    <section id="home" style="background:url(img/bg/wedding1.jpg) center center no-repeat; background-size: cover; filter: contrast(95%);" class="w-full h-[100%] py-28 px-2">
+        <div class="hero">
+            <img src="img/element/flower.png" alt="" class="m-auto w-[100px] sm:w-[150px]">
             <h4 class="text-white text-center font-semibold text-[16px] sm:text-[25px]">The Wedding Of</h4>
-            <h1 class="text-white text-center font-regular text-[100px] invisible sm:visible" style="font-family: 'Passions Conflict', cursive;">Anonym & Mynonym</span></h1>
-            <h2 class="title-hero sm:invisible text-white text-center font-regular text-[70px]" style="font-family: 'Passions Conflict', cursive;">Anonym <br>& <br class=""> Mynonim</h2>
-            <hr class="line m-auto mt-[20px] sm:mt-[-300px] border-[2px] border-[#fff] w-[16%] inline-block">
-            <p class="text-center text-white font-semibold mt-[20px] sm:mt-[-220px]">09 November 2023</p>
+            <h1 class="text-white align-center text-center font-regular text-[60px] sm:text-[80px] md:text-[100px]" style="font-family: 'Passions Conflict', cursive;">Anonym & Mynonym</span></h1>
+            <hr class="m-auto border-[2px] border-[#fff] w-[16%]">
+            <p class="text-center text-white font-semibold pt-10">09 November 2023</p>
         </div>
     </section>
 
     <!-- COUPLE -->
     <section id="couple" class="couple z-10">
         <div id="couple" class="h-[1800px] sm:h-[900px]">
-            <img src="img/flower2.png" alt="" class="w-[80%] flower mt-[100px] m-auto">
+            <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower m-auto">
 
             <h1 class="title text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Bridge & Groom</h1>
 
@@ -114,7 +126,7 @@
             <!-- PROFILES 1 -->
             <div class="profiles flex mt-[70px] invisible sm:visible">
                 <div class="profile1 m-auto mr-10">
-                    <img src="img/female.png" alt="" class="w-[170px] rounded-full border-[4px] border-red-200">
+                    <img src="img/profile/female.png" alt="" class="w-[170px] rounded-full border-[4px] border-red-200">
                     <h2 class="mt-[20px] mb-[20px] text-gray-600 text-[70px] text-center" style="font-family: 'Passions Conflict', cursive;">Mynonym</h2>
                     <p  class="text-center font-bold text-lg text-stone-800">Mynonym Putri</p>
                     <p class="text-center text-sm text-gray-800">Putri Dari Pasangan
@@ -125,7 +137,7 @@
                     <p class="text-center text-sm text-gray-800">Tasikmalaya</p>
                 </div>
                 <div class="profile2 m-auto">
-                    <img src="img/male.png" alt="" class="w-[170px] rounded-full border-[4px] border-red-200">
+                    <img src="img/profile/male.png" alt="" class="w-[170px] rounded-full border-[4px] border-red-200">
                     <h2 class="mt-[20px] mb-[20px] text-gray-600 text-[70px] text-center" style="font-family: 'Passions Conflict', cursive;">Anonym</h2>
                     <p  class="text-center font-bold text-lg text-stone-800">Anonym Putra</p>
                     <p class="text-center text-sm text-gray-800">Putra Dari Pasangan
@@ -142,7 +154,7 @@
             <!-- PROFILES 2 -->
             <div class="profiles2 grid mt-[-200px] visible sm:invisible">
                 <div class="profile-1 m-auto">
-                    <img src="img/female.png" alt="" class="w-[80%] m-auto rounded-full border-[4px] border-red-200">
+                    <img src="img/profile/female.png" alt="" class="w-[80%] m-auto rounded-full border-[4px] border-red-200">
                     <h2 class="mt-[20px] mb-[20px] text-gray-600 text-[70px] text-center" style="font-family: 'Passions Conflict', cursive;">Mynonym</h2>
                     <p  class="text-center font-bold text-lg text-stone-800">Mynonym Putri</p>
                     <p class="text-center text-sm text-gray-800">Putri Dari Pasangan
@@ -156,7 +168,7 @@
                 <div class="dan2 m-auto text-center mt-[50px] font-bold text-[80px] text-stone-800 visible sm:invisible">&</div>
 
                 <div class="profile-2 m-auto mt-[50px]">
-                    <img src="img/male.png" alt="" class="w-[80%] m-auto rounded-full border-[4px] border-red-200">
+                    <img src="img/profile/male.png" alt="" class="w-[80%] m-auto rounded-full border-[4px] border-red-200">
                     <h2 class="mt-[20px] mb-[20px] text-gray-600 text-[70px] text-center" style="font-family: 'Passions Conflict', cursive;">Anonym</h2>
                     <p  class="text-center font-bold text-lg text-stone-800">Anonym Putra</p>
                     <p class="text-center text-sm text-gray-800">Putra Dari Pasangan
@@ -171,8 +183,8 @@
     </section>
 
     <!-- EVENT -->
-    <section id="event" style="background:url(img/wedding1.jpg) center center no-repeat; background-size: cover; filter: contrast(1);" class="hero w-full h-screen">
-            <img src="img/flower2.png" alt="" class="w-[80%] flower2 m-auto">
+    <section id="event" style="background:url(img/bg/wedding1.jpg) center center no-repeat; background-size: cover; filter: contrast(1);" class="hero w-full h-screen pb-10">
+            <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower2 m-auto">
             <h1 class="title2 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Bridge & Groom</h1>
 
         <div class="acara gap-7 justify-center align-center items-center">
@@ -207,34 +219,31 @@
     <!-- GALLERY -->
     <section id="gallery">
         <div class="photo h-[100%]">
-            <img src="img/flower2.png" alt="" class="w-[80%] flower3 mt-[100px] m-auto">
+            <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower3 m-auto">
             <h1 class="title3 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Our Gallery</h1>
-
             
             <div class="z-10 full-img w-[100%] h-[100vh] fixed top-0 left-0 items-center justify-center" style="background-color: rgba(255, 255, 255, 0.6); display: none;" id="fullImgBox">
-                <img src="img/img1.jpg" alt="" class="w-[90%] max-w-[500px]" id="fullImg">
+                <img src="img/gallery/img1.jpg" alt="" class="w-[90%] max-w-[500px]" id="fullImg">
                 <span class="absolute top-[5%] ml-[90%] text-[30px] cursor-pointer" onclick="closeFullImg()">X</span>
             </div>
 
             <div class="gallery w-[80%] mt-[100px] m-auto mb-[50px] mt-5">
-                <img src="img/img1.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img1">
-                <img src="img/img2.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img2">
-                <img src="img/img3.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img3">
-                <img src="img/img4.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img4">
-                <img src="img/img5.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img5">
-                <img src="img/img6.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img6">
+                <img src="img/gallery/img1.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img1">
+                <img src="img/gallery/img2.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img2">
+                <img src="img/gallery/img3.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img3">
+                <img src="img/gallery/img4.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img4">
+                <img src="img/gallery/img5.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img5">
+                <img src="img/gallery/img6.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img6">
             </div>
         </div>
-        <div class="h-screen flex" style="background-image: url(img/wedding1.jpg); background-attachment: fixed; background-size: cover; background-position: 0 -100px; filter: contrast(80%);">
-            <!-- <div class="z-10 card3 bg-slate-100 w-[95%] h-[200px] rounded-xl" style="background-color: rgba(225, 225, 225, 0.5);"> -->
+        <div class="h-[100%] flex p-10" style="background-image: url(img/bg/wedding1.jpg); background-attachment: fixed; background-size: cover; background-position: 0 -100px; filter: contrast(80%);">
             <div class="m-auto w-[95%] align-center bg-white/[.7] rounded-[5px] p-2">
                 <p class="text-center text-gray-900 text-[15px] p-6">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."</p>
                 <h2 class="font-semibold text-center text-[30px]">QS. Ar-Rum : 21</h2>
             </div>
-            <!-- </div> -->
         </div>
-        <div class="count-down h-screen mb-[300px]">
-            <img src="img/flower2.png" alt="" class="w-[80%] flower4 mt-[100px] m-auto">
+        <div class="count-down">
+            <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower4 m-auto">
             <h1 class="title4 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Countdown</h1>
 
             <div class="circles grid grid-cols-2 sm:grid-cols-4 m-auto mt-[30px]">
@@ -256,7 +265,7 @@
                 </div>
             </div>
 
-            <div class="map w-[100%] h-screen">
+            <div class="map w-[100%]">
                 <div class="maps">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.228689743799!2d108.2057787142483!3d-7.3281921741032106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5739f7dafe1d%3A0x2bc2de0433133e93!2sGedung%20Renald!5e0!3m2!1sid!2sid!4v1664945475057!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-[120px] h-[300px] w-[100%]"></iframe>
                 </div>
@@ -269,8 +278,8 @@
     </section>
 
     <!-- GUESTBOOK -->
-    <section id="guestbook" class="m-auto h-screen mt-[100px]">
-        <img src="img/flower2.png" alt="" class="w-[80%] flower5 m-auto">
+    <section id="guestbook" class="m-auto h-[900px]">
+        <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower5 m-auto">
         <h1 class="title5 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">GuestBooks</h1>
 
         <div class="book m-auto bg-white w-[95%] sm:w-[75%] md:w-[70%] lg:w-[50%] xl:w-[47%] h-[58%] rounded-l-xl border-[1.5px] border-red-400 overflow-auto">
@@ -278,85 +287,85 @@
                 <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">SM</div>
                 <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Shinta Maharani <br><p class="text-[11px]">02 December 2022 16:00</p></h4>
             </div>
-            <p class="ml-[95px]">Mibujuh Na 🌹</p>
+            <p class="px-10 m-auto pt-5 text-[14px] md:text-[15px] lg:text-[16px]">Mibujuh Na 🌹</p>
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
 
             <div class="flex ml-[30px] mt-4">
                 <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">UB</div>
                 <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Ujang Bungsu <br><p class="text-[11px]">01 December 2022 13:00</p></h4>
             </div>
-            <p class="ml-[95px]">Selamat menua bersama 💐</p>
+            <p class="px-10 m-auto pt-5 text-[14px] md:text-[15px] lg:text-[16px]">Selamat menua bersama 💐</p>
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
 
             <div class="flex ml-[30px] mt-4">
                 <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">KC</div>
                 <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Keluarga Cemara <br><p class="text-[11px]">05 November 2022 11:00</p></h4>
             </div>
-            <p class="ml-[95px]">Barakallah semoga lancar sampai hari H dan menjadi kelyarga yg SaMaWa.. 🤲</p>
+            <p class="px-10 m-auto pt-5 text-[14px] md:text-[15px] lg:text-[16px]">Barakallah semoga lancar sampai hari H dan menjadi kelyarga yg SaMaWa.. 🤲</p>
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
 
             <div class="flex ml-[30px] mt-4">
                 <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">IS</div>
                 <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Ilham Samsudin <br><p class="text-[11px]">09 November 2022 16:00</p></h4>
             </div>
-            <p class="ml-[95px]">Happy wedding 🎉</p>
+            <p class="px-10 m-auto pt-5 text-[14px] md:text-[15px] lg:text-[16px]">Happy wedding 🎉</p>
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
 
             <div class="flex ml-[30px] mt-4">
                 <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">SH</div>
                 <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Saudara Hansen <br><p class="text-[11px]">10 November 2022 09:00</p></h4>
             </div>
-            <p class="ml-[95px]">Selamat atas pernikahannya..</p>
+            <p class="px-10 m-auto pt-5 text-[14px] md:text-[15px] lg:text-[16px]">Selamat atas pernikahannya..</p>
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
 
             <div class="flex ml-[30px] mt-4">
                 <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">IR</div>
                 <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Idgitaf Ramadhan <br><p class="text-[11px]">10 November 2022 11:00</p></h4>
             </div>
-            <p class="ml-[95px]">asdads</p>
+            <p class="px-10 m-auto pt-5 text-[14px] md:text-[15px] lg:text-[16px]">asdads</p>
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
 
             <div class="flex ml-[30px] mt-4">
                 <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">IR</div>
                 <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Idgitaf Ramadhan <br><p class="text-[11px]">10 November 2022 11:01</p></h4>
             </div>
-            <p class="ml-[95px]">Selamat ya 👏</p>
+            <p class="px-10 m-auto pt-5 text-[14px] md:text-[15px] lg:text-[16px]">Selamat ya 👏</p>
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
 
             <div class="flex ml-[30px] mt-4">
                 <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">KK</div>
                 <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Keluarga Kridzi & Co <br><p class="text-[11px]">09 November 2022 11:01</p></h4>
             </div>
-            <p class="ml-[95px]">Selamat ya atas pernikahannya, sakinah mawaddah warohmah. 🎉🎂🙏</p>
+            <p class="px-10 m-auto pt-5 text-[14px] md:text-[15px] lg:text-[16px]">Selamat ya atas pernikahannya, sakinah mawaddah warohmah. 🎉🎂🙏</p>
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
 
             <div class="flex ml-[30px] mt-4">
                 <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">RSJ</div>
                 <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Rehan Syulit Jir (RSJ)<br><p class="text-[11px]">05 October 2022 17:00</p></h4>
             </div>
-            <p class="ml-[95px]">Begitu Syulit lupakan rehan, apalagi rehan baik....</p>
+            <p class="px-10 m-auto pt-5 text-[14px] md:text-[15px] lg:text-[16px]">Begitu Syulit lupakan rehan, apalagi rehan baik....</p>
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
 
             <div class="flex ml-[30px] mt-4">
                 <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">HM</div>
                 <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Hikmal Maulana <br><p class="text-[11px]">05 October 2022 16:00</p></h4>
             </div>
-            <p class="ml-[95px]">Titip Salam Buat Bang Galih, jangan lupa titik koma💻</p>
+            <p class="px-10 m-auto pt-5 text-[14px] md:text-[15px] lg:text-[16px]">Titip Salam Buat Bang Galih, jangan lupa titik koma💻</p>
             <hr class="m-auto mt-4 border-[#ff7070] w-[95%]">
         </div>
     </section>
 
-    <footer class="bg-[#faebd7] w-full h-[200px]">
+    <footer class="bg-[#faebd7] w-full h-[200px] relative bottom-0">
         <div class="footer pt-[50px]">
             <a href="https://www.youtube.com/channel/UCwhzKJGC3jD47D2wHV5SreQ" class="flex justify-center" target="_blank">
-                <img src="img/logo-kridzi.jpg" alt="" class="rounded-full w-[20px] h-[20px]">
+                <img src="img/logo-icon/logo-kridzi.jpg" alt="" class="rounded-full w-[20px] h-[20px]">
                 <p class="ml-2 font-semibold text-[15px] text-gray-900">Dzikrinativedesigns</p>
             </a>
             <p class="m-auto text-center mt-2 text-xs text-gray-700">Ⓒ Website Undangan Pernikahan Online</p>
         </div>
     </footer>
 
-    <div class="audio-player fixed bottom-[90px] right-[-150px] z-20">
+    <div class="audio-player fixed bottom-[50px] sm:bottom-[90px] right-[-160px] sm:right-[-150px] z-20">
         <audio autoplay loop src="mp3/Ed-Sheeran-Perfect.mp3"></audio>
         <div class="controls m-auto">
         <button class="player-button">

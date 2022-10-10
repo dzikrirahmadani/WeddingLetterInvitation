@@ -1,2 +1,2 @@
-- Card 2 (Event)
-- Padding top flower
+- Card 2 (Event)✔
+- Padding top flower✔
