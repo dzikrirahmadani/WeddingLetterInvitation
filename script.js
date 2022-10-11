@@ -237,3 +237,11 @@ function changeTimelinePosition () {
   timeline.style.backgroundSize = `${percentagePosition}% 100%`;
   timeline.value = percentagePosition;
 }
+
+// NAV JS
+$(document).ready(function() {
+    $('li').on('click', function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    })
+});

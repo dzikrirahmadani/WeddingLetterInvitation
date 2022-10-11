@@ -43,7 +43,7 @@
     </div>
     
     <!-- NAVABAR -->
-    <div class="nav fixed bottom-0 w-full px-[6px] py-[13px] bg-white flex justify-center z-20 shadow-2xl">
+    <div class="nav fixed bottom-0 w-full px-[6px] py-[13px] bg-white flex justify-center z-20">
         <ul class="flex">
             <li class="px-4 m-auto">
                 <a href="#" class="grid" id="home">
@@ -91,11 +91,12 @@
                     <span class="nav-title font-bold text-slate-600">GuestBook</span>
                 </a>
             </li>
+            <li class="slide absolute w-[80px] h-[100%] top-0 bg-red-400 z-[-1]"></li>
         </ul>
     </div>
     
     <!-- HOME -->
-    <section id="home" style="background:url(img/bg/wedding1.jpg) center center no-repeat; background-size: cover; filter: contrast(95%);" class="w-full h-[100%] py-28 px-2">
+    <section id="home" style="background:url(img/bg/wedding1.jpg) center center no-repeat; background-size: cover; filter: contrast(95%);" class="w-full h-[100%] py-44 sm:py-28 px-2">
         <div class="hero">
             <img src="img/element/flower.png" alt="" class="m-auto w-[100px] sm:w-[150px]">
             <h4 class="text-white text-center font-semibold text-[16px] sm:text-[25px]">The Wedding Of</h4>
@@ -183,9 +184,13 @@
     </section>
 
     <!-- EVENT -->
-    <section id="event" style="background:url(img/bg/wedding1.jpg) center center no-repeat; background-size: cover; filter: contrast(1);" class="hero w-full h-screen pb-10">
-            <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower2 m-auto">
-            <h1 class="title2 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Bridge & Groom</h1>
+    
+    <section id="event" style="background:url(img/bg/wedding1.jpg) center center no-repeat; background-size: cover; filter: contrast(1);" class="w-full h-screen pb-10">
+
+        <div class="kosong2"></div>
+
+        <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower2 m-auto">
+        <h1 class="title2 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Bridge & Groom</h1>
 
         <div class="acara gap-7 justify-center align-center items-center">
             <div class="card1 bg-red-50 h-[300px] rounded-lg shadow-lg">
@@ -222,24 +227,29 @@
             <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower3 m-auto">
             <h1 class="title3 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">Our Gallery</h1>
             
-            <div class="z-10 full-img w-[100%] h-[100vh] fixed top-0 left-0 items-center justify-center" style="background-color: rgba(255, 255, 255, 0.6); display: none;" id="fullImgBox">
+            <div class="z-50 full-img w-[100%] h-[100vh] fixed top-0 left-0 items-center justify-center" style="background-color: rgba(255, 255, 255, 0.6); display: none;" id="fullImgBox">
                 <img src="img/gallery/img1.jpg" alt="" class="w-[90%] max-w-[500px]" id="fullImg">
-                <span class="absolute top-[5%] ml-[90%] text-[30px] cursor-pointer" onclick="closeFullImg()">X</span>
+                <span class="absolute top-[25%] ml-[85%] text-[30px] cursor-pointer" onclick="closeFullImg()">X</span>
             </div>
 
-            <div class="gallery w-[80%] mt-[100px] m-auto mb-[50px] mt-5">
-                <img src="img/gallery/img1.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img1">
-                <img src="img/gallery/img2.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img2">
-                <img src="img/gallery/img3.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img3">
-                <img src="img/gallery/img4.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img4">
-                <img src="img/gallery/img5.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img5">
-                <img src="img/gallery/img6.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer min-h-[300px] block" onclick="openFullImg(this.src)" id="img6">
+            <div class="gallery w-[80%] mt-[100px] m-auto mb-[50px] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-[13px]">
+                <img src="img/gallery/img1.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer h-[300px] block" onclick="openFullImg(this.src)" id="img1">
+                <img src="img/gallery/img2.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer h-[300px] block" onclick="openFullImg(this.src)" id="img2">
+                <img src="img/gallery/img3.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer h-[300px] block" onclick="openFullImg(this.src)" id="img3">
+                <img src="img/gallery/img4.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer h-[300px] block" onclick="openFullImg(this.src)" id="img4">
+                <img src="img/gallery/img5.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer h-[300px] block" onclick="openFullImg(this.src)" id="img5">
+                <img src="img/gallery/img6.jpg" alt="" class="w-[100%] rounded-[5px] cursor-pointer h-[300px] block" onclick="openFullImg(this.src)" id="img6">
             </div>
         </div>
-        <div class="h-[100%] flex p-10" style="background-image: url(img/bg/wedding1.jpg); background-attachment: fixed; background-size: cover; background-position: 0 -100px; filter: contrast(80%);">
-            <div class="m-auto w-[95%] align-center bg-white/[.7] rounded-[5px] p-2">
+        
+        <div class="h-[100%] flex p-10" style="background-image: url(img/bg/wedding1.jpg); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; background-position: 0 -100px;">
+            <div class="kosong3"></div>
+
+            
+
+            <div class="m-auto w-[95%] align-center bg-white/[.7] rounded-[5px] p-2 z-10">
                 <p class="text-center text-gray-900 text-[15px] p-6">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."</p>
-                <h2 class="font-semibold text-center text-[30px]">QS. Ar-Rum : 21</h2>
+                <h2 class="font-semibold text-center text-[24px] text-slate-900">QS. Ar-Rum : 21</h2>
             </div>
         </div>
         <div class="count-down">
@@ -282,7 +292,7 @@
         <img src="img/element/flower2.png" alt="" class="sm:w-[300px] w-[80%] pt-[50px] flower5 m-auto">
         <h1 class="title5 text-[50px] text-center mt-[-5px]" style="font-family: 'Passions Conflict', cursive;">GuestBooks</h1>
 
-        <div class="book m-auto bg-white w-[95%] sm:w-[75%] md:w-[70%] lg:w-[50%] xl:w-[47%] h-[58%] rounded-l-xl border-[1.5px] border-red-400 overflow-auto">
+        <div class="book m-auto bg-white w-[95%] sm:w-[75%] md:w-[70%] lg:w-[50%] xl:w-[47%] h-[58%] rounded-2xl border-[1.5px] border-red-400 overflow-auto">
             <div class="flex ml-[30px] mt-[40px]">
                 <div class="profile bg-[#ff7070] w-[50px] h-[50px] text-white flex items-center justify-center rounded-full text-[25px]">SM</div>
                 <h4 class="ml-[15px] mt-[-2px] text-gray-600 font-semibold">Shinta Maharani <br><p class="text-[11px]">02 December 2022 16:00</p></h4>
@@ -372,7 +382,6 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
                 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
             </svg>
-        </button>
         </button>
         </div>
     </div>

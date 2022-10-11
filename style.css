@@ -1,4 +1,4 @@
-/* CSS card1 */
+/* CSS */
 
 /* animation css */
 
@@ -22,22 +22,44 @@
     }
 }
 
+div.kosong2 {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(0deg , rgba(254,242,242,0), rgba(254,242,242,1)); 
+}
+
+div.kosong3 {
+    position: absolute;
+    left: 0;
+    margin-top: -40px;
+    height:  200px;
+    width: 100%;
+    background: linear-gradient(0deg , rgba(254,242,242,0), rgba(254,242,242,1)); 
+}
+
 img.wedding {
     filter: contrast(80%);
     filter: brightness(80%);
   }
 
-.gallery {
+/* .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr,));
     grid-gap: 15px;
-}
+} */
 
 .bi {
     fill: #475569;
 }
 .bi.putih {
     fill: #F87171;
+}
+
+.nav {
+    box-shadow: 1px -2px 27px -11px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 1px -2px 27px -11px rgba(0,0,0,0.30);
+    -moz-box-shadow: 1px -2px 27px -11px rgba(0,0,0,0.30);
 }
 
 .nav-title {
@@ -252,9 +274,8 @@ img.wedding {
 }
 
 .gallery img:hover {
-    /* transform: scale(1.04); */
-    /* filter: brightness(130%); */
-    filter: contrast(150%);
+    filter: brightness(130%);
+    /* filter: contrast(150%); */
 }
 
 #img1 {
@@ -365,6 +386,97 @@ img.wedding {
 .btn-map.muncul {
     opacity: 1;
     transform: translateY(0);
+}
+
+ul li.active a span {
+    color: #fff;
+}
+ul li.active a svg {
+    fill: #fff;
+}
+
+.slide {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+ul li:nth-child(1).active ~ .slide {
+    opacity: 1;
+}
+
+ul li:nth-child(2).active ~ .slide {
+    opacity: 1;
+    margin-left: 83px;
+}
+
+ul li:nth-child(3).active ~ .slide {
+    margin-left: 165px;
+    opacity: 1;
+}
+
+ul li:nth-child(4).active ~ .slide {
+    margin-left: 248px;
+    opacity: 1;
+}
+
+ul li:nth-child(5).active ~ .slide {
+    margin-left: 342px;
+    width: 100px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 639px) {
+    ul li:nth-child(1).active ~ .slide {
+        margin-left: 4.5px;
+        width: 50px;
+    }
+    
+    ul li:nth-child(2).active ~ .slide {
+        margin-left: 59px;
+        width: 50px;
+    }
+    
+    ul li:nth-child(3).active ~ .slide {
+        margin-left: 110px;
+        width: 50px;
+    }
+    
+    ul li:nth-child(4).active ~ .slide {
+        margin-left: 162px;
+        width: 50px;
+    }
+    
+    ul li:nth-child(5).active ~ .slide {
+        margin-left: 215px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    ul li:nth-child(1).active ~ .slide {
+        margin-left: 2px;
+        width: 50px;
+    }
+    
+    ul li:nth-child(2).active ~ .slide {
+        margin-left: 51.5px;
+        width: 50px;
+    }
+    
+    ul li:nth-child(3).active ~ .slide {
+        margin-left: 100.5px;
+        width: 50px;
+    }
+    
+    ul li:nth-child(4).active ~ .slide {
+        margin-left: 150px;
+        width: 50px;
+    }
+    
+    ul li:nth-child(5).active ~ .slide {
+        margin-left: 199px;
+        width: 50px;
+    }
 }
 
 /* End Animation CSS */
