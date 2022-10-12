@@ -219,30 +219,6 @@ img.wedding {
     transform: translateY(0);
 }
 
-/* Transparent Gradient */
-/* .event::after {
-    top: 240vh;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    background: flower5ar-gradient(to bottom, #FEF2F2 10%, transparent 100%);
-    z-index: 1;
-}
-
-.photo::after {
-    top: 525vh;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    background: flower5ar-gradient(to bottom, #FEF2F2 10%, transparent 100%);
-    z-index: 1;
-} */
-
-
 .card1 {
     /* box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.46);
     -webkit-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.46);
@@ -275,7 +251,6 @@ img.wedding {
 
 .gallery img:hover {
     filter: brightness(130%);
-    /* filter: contrast(150%); */
 }
 
 #img1 {
@@ -388,96 +363,35 @@ img.wedding {
     transform: translateY(0);
 }
 
-ul li.active a span {
-    color: #fff;
-}
-ul li.active a svg {
-    fill: #fff;
-}
-
-.slide {
-    transition: 0.5s;
-    opacity: 0;
-}
-
-ul li:nth-child(1).active ~ .slide {
-    opacity: 1;
-}
-
-ul li:nth-child(2).active ~ .slide {
-    opacity: 1;
-    margin-left: 83px;
-}
-
-ul li:nth-child(3).active ~ .slide {
-    margin-left: 165px;
-    opacity: 1;
-}
-
-ul li:nth-child(4).active ~ .slide {
-    margin-left: 248px;
-    opacity: 1;
-}
-
-ul li:nth-child(5).active ~ .slide {
-    margin-left: 342px;
+ul li a {
     width: 100px;
-    opacity: 1;
+    height: 70px;
+    padding: 10px;
+}
+
+ul li a.active{
+    background-color: salmon;
 }
 
 @media screen and (max-width: 639px) {
-    ul li:nth-child(1).active ~ .slide {
-        margin-left: 4.5px;
-        width: 50px;
+    ul li a.active{
+        background-color: salmon;
     }
-    
-    ul li:nth-child(2).active ~ .slide {
-        margin-left: 59px;
-        width: 50px;
+    ul li a {
+        width: 55px;
+        height: 70px;
     }
-    
-    ul li:nth-child(3).active ~ .slide {
-        margin-left: 110px;
-        width: 50px;
-    }
-    
-    ul li:nth-child(4).active ~ .slide {
-        margin-left: 162px;
-        width: 50px;
-    }
-    
-    ul li:nth-child(5).active ~ .slide {
-        margin-left: 215px;
-        width: 50px;
+    ul li a svg{
     }
 }
 
-@media screen and (max-width: 340px) {
-    ul li:nth-child(1).active ~ .slide {
-        margin-left: 2px;
-        width: 50px;
-    }
-    
-    ul li:nth-child(2).active ~ .slide {
-        margin-left: 51.5px;
-        width: 50px;
-    }
-    
-    ul li:nth-child(3).active ~ .slide {
-        margin-left: 100.5px;
-        width: 50px;
-    }
-    
-    ul li:nth-child(4).active ~ .slide {
-        margin-left: 150px;
-        width: 50px;
-    }
-    
-    ul li:nth-child(5).active ~ .slide {
-        margin-left: 199px;
-        width: 50px;
-    }
+ul li a.active span {
+    color: #fff;
 }
+ul li a.active svg {
+    fill: #fff;
+}
+
 
 /* End Animation CSS */
 
@@ -649,5 +563,93 @@ ul li:nth-child(5).active ~ .slide {
 @media screen and (max-height: 445px) {
     .surah {
         height: 100%;
+    }
+}
+
+/* wave animate */
+
+.waves1 {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    bottom: 0;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -50px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.parallax > use {
+    -webkit-animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+            animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    -webkit-animation-duration: 13s;
+            animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    -webkit-animation-delay: -5s;
+            animation-delay: -5s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+}
+
+@-webkit-keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
+    }
+}
+
+@keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width : 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    .content {
+        height: 30vh;
+    }
+    .waves {
+        height: 40px;
+        min-height: 40px;
     }
 }
